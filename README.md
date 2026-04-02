@@ -582,21 +582,11 @@ fraction of their structural maximum, which the model interprets as a condition 
 
 ## About Me
 
-**Monjok Joseph Terem**
+My name is Joseph Terem Monjok, and I am a Graduate Civil Engineer with over a year of practical field experience in the construction and infrastructure sector. My academic foundation was built at the Federal University of Technology, Minna, where I earned my B.Eng with a CGPA of 4.15/5.0. Professionally, I am proficient in industry-standard engineering software, utilizing ProtaStructure for complex structural analysis and Autodesk Civil 3D for precise infrastructure design and land modeling.
 
-I hold a B.Eng in Civil Engineering from the Federal University of Technology,
-Minna, with a CGPA of 4.15/5.0. I have worked in dam operations at North South
-Power Company Limited and as a Research Analyst at ESGWise. I am currently
-building a machine learning and data analytics portfolio that applies what I know
-from engineering to real data problems.
+Driven by the evolving landscape of the industry, I am expanding my expertise into the realms of Data Analytics, Machine Learning (ML), and ESG (Environmental, Social, and Governance). I am currently building a portfolio that integrates my engineering domain knowledge with technical skills in Python and SQL to solve real-world data problems. My goal is to leverage these multi-disciplinary tools to foster more resilient infrastructure and contribute to sustainable, data-driven engineering solutions.
 
-My civil engineering background shaped how I approached this project directly.
-I already understood what a substructure is, why load ratings matter for safety,
-and what it means in practice for a bridge to be structurally deficient. That
-knowledge informed the feature selection, the data cleaning decisions, and the
-interpretation of what the model results actually mean in the physical world.
-
-- **GitHub:** [github.com/MonjokT](https://github.com/MonjokT)
+- **LinkedIn:** https://www.linkedin.com/in/joseph-monjok-a8b813232
 
 ---
 
