@@ -597,7 +597,7 @@ to a source. The table below maps each decision to where it came from.
 
 | Decision | Source |
 |----------|--------|
-| What each NBI field means, how the 0–9 condition scale works, and the full column reference | FHWA Recording and Coding Guide for the Structure Inventory and Appraisal of the Nation's Bridges (FHWA-PD-96-001): [https://www.fhwa.dot.gov/bridge/mtguide.pdf](https://www.fhwa.dot.gov/bridge/mtguide.pdf) |
+| What each NBI field means, how the 0–9 condition scale works, and the full column reference | FHWA Recording and Coding Guide for the Structure Inventory and Appraisal of the Nation's Bridges (FHWA-PD-96-001): Page 38 [https://www.fhwa.dot.gov/bridge/mtguide.pdf](https://www.fhwa.dot.gov/bridge/mtguide.pdf) |
 | Why condition columns contain the letter `N` instead of a number | FHWA Coding Guide, Items 58–62. When a structural component does not exist on a bridge — for example, a highway bridge has no culvert — the inspector records `N` for Not Applicable. Pandas reads any column containing a letter as text, which is why those columns required type conversion |
 | Why `ADT_029` contains the value `999,999` | FHWA Coding Guide, Item 29. The value 999,999 is the FHWA's designated code for an unknown average daily traffic count. It is not a real figure and was replaced with a null value before any analysis |
 | Mapping numeric state codes to state names | US Census Bureau FIPS State Codes: [https://www.census.gov/library/reference/code-lists/ansi/ansi-codes-for-states.html](https://www.census.gov/library/reference/code-lists/ansi/ansi-codes-for-states.html) |
