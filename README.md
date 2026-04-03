@@ -356,7 +356,8 @@ the models more useful signals:
 
 ### 1. How Bridge Conditions Are Distributed
 
-![Condition Distribution](visuals/target_distribution.png)
+<img width="1384" height="484" alt="1000820968" src="https://github.com/user-attachments/assets/bdeee23c-cc27-42bf-ad6c-bef1f4e70a80" />
+
 
 The left chart shows how many bridges have each condition score from 0 to 9. The
 tallest bars sit at scores 5, 6, and 7 — meaning most US highway bridges are in
@@ -379,7 +380,8 @@ portion of that 51% will slide into the Poor category in coming years.
 
 ### 2. Does Age Affect Condition?
 
-![Age vs Condition](visuals/age_vs_condition.png)
+<img width="1384" height="484" alt="1000820969" src="https://github.com/user-attachments/assets/96685a20-aa97-4a76-ae63-a432e9903855" />
+
 
 Yes — clearly. The scatter plot on the left shows 10,000 randomly sampled bridges.
 Each dot is one bridge; the x-axis is how old it is, the y-axis is its condition
@@ -399,7 +401,8 @@ and it is the feature the model learns the most from.
 
 ### 3. Does Traffic Volume Affect Condition?
 
-![Traffic vs Condition](visuals/traffic_vs_condition.png)
+<img width="1384" height="484" alt="1000820970" src="https://github.com/user-attachments/assets/bd66c35a-2698-4536-86b7-6ae635ae5a70" />
+
 
 The relationship here is less straightforward than expected. The box plots on the
 left group bridges into four traffic bands and show the spread of condition scores
@@ -421,7 +424,8 @@ useful to the model than either traffic variable on its own.
 
 ### 4. What Correlates Most With Condition?
 
-![Correlation Heatmap](visuals/correlation_heatmap.png)
+<img width="1113" height="884" alt="1000820971" src="https://github.com/user-attachments/assets/3f8bfa51-97c9-4a42-8b5c-1d51f1a86c39" />
+
 
 The heatmap shows the statistical relationship between every pair of columns.
 Each cell contains a number between −1 and +1. Green means the two columns tend to
@@ -449,7 +453,8 @@ specifically to handle this.
 
 ### 5. Does Reconstruction Help?
 
-![Renovation Effect](visuals/renovation_effect.png)
+<img width="784" height="484" alt="1000820972" src="https://github.com/user-attachments/assets/808cd9df-61da-4d18-9b1f-8a4ecafcecaa" />
+
 
 Yes, measurably. The three charts examine the `YEARS_SINCE_RENO` feature from
 different angles.
@@ -476,7 +481,8 @@ rating for many bridges.
 
 ### 6. How Did the Models Compare?
 
-![Model Comparison](visuals/model_comparison.png)
+<img width="1578" height="512" alt="1000820974" src="https://github.com/user-attachments/assets/24c7f3a7-e7ec-4e08-819c-78b3cf8e1f74" />
+
 
 | Model | R² | MAE | RMSE |
 |-------|----|-----|------|
@@ -521,7 +527,8 @@ of penalty. These models would show more differentiation on a smaller dataset.
 
 ### 7. Which States Have the Most At-Risk Bridges?
 
-![At-Risk by State](visuals/at_risk_by_state.png)
+<img width="1384" height="484" alt="1000820975" src="https://github.com/user-attachments/assets/2108a919-2628-41ee-bd3f-6033c944e9c7" />
+
 
 The at-risk report applies the Multiple Linear Regression model to all 474,880
 highway bridges and flags those predicted to score 4 or below — the FHWA's
