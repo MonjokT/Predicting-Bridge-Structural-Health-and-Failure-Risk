@@ -530,25 +530,7 @@ of penalty. These models would show more differentiation on a smaller dataset.
 <img width="1384" height="484" alt="1000820975" src="https://github.com/user-attachments/assets/2108a919-2628-41ee-bd3f-6033c944e9c7" />
 
 
-The at-risk report applies the Multiple Linear Regression model to all 474,880
-highway bridges and flags those predicted to score 4 or below — the FHWA's
-structural deficiency threshold.
-
-**4,329 bridges were flagged as at-risk — 0.9% of the national highway bridge
-inventory.**
-
-The states with the highest concentrations are Illinois, Pennsylvania, Louisiana,
-New York, and Indiana. This is consistent with the known geography of the US
-bridge problem: the northeastern and midwestern states have the oldest bridge stock
-in the country, combined with harsh winters where freeze-thaw cycles and road salt
-accelerate structural wear. Rural networks in these states also tend to receive less
-maintenance funding than bridges on major urban corridors.
-
-Pennsylvania's appearance near the top of the individual bridge rankings is partly
-explained by several bridges dating back to the 1800s still in active service.
-Illinois bridges from 1968–2003 appear in the highest-risk group due to high
-`LOAD_RATIO` values — a signal that their permitted routine load is a large
-fraction of their structural maximum, which the model interprets as a condition risk.
+ The at-risk report applies the Multiple Linear Regression model to all 474,880 highway bridges and flags 4,329 structures (0.9% of the inventory) predicted to score 4 or below. According to the model, Iowa, Missouri, and Mississippi show the highest volume of at-risk bridges, followed closely by Illinois and Pennsylvania. This distribution reflects the challenges faced by Midwestern and Northeastern states, where a combination of the nation's oldest bridge stock and harsh freeze-thaw cycles significantly accelerates structural deterioration.
 
 ---
 
