@@ -358,23 +358,12 @@ the models more useful signals:
 
 <img width="1384" height="484" alt="1000820968" src="https://github.com/user-attachments/assets/bdeee23c-cc27-42bf-ad6c-bef1f4e70a80" />
 
-
-The left chart shows how many bridges have each condition score from 0 to 9. The
-tallest bars sit at scores 5, 6, and 7 — meaning most US highway bridges are in
-the Fair to Good range. Scores 8 and 9 (near-perfect condition) are relatively
-rare, as are scores 0 to 2 (critically deteriorated — those bridges are typically
-already closed or under emergency repair).
-
-The right chart groups those scores into the three official FHWA categories. Of the
-474,880 highway bridges in the dataset:
-
-- **51.0%** are in **Fair** condition (242,166 bridges)
-- **40.8%** are in **Good** condition (193,638 bridges)
-- **8.2%** are in **Poor** condition (39,076 bridges)
-
-The Fair majority is worth noting. A Fair bridge is not immediately dangerous, but
-it has components that are showing wear. Without proactive maintenance, a large
-portion of that 51% will slide into the Poor category in coming years.
+The left chart reveals the immediate workload for maintenance planners: while most bridges fall into the "Fair" to "Satisfactory" range (scores 5–7), the significant volume of structures at score 4 and below represents the critical "At-Risk" group. These specific 39,076 bridges require urgent budgetary priority and engineering intervention before structural deterioration becomes irreversible.
+The right chart provides a high-level safety summary of the 474,880 highway bridges analyzed:
+ * 51.0% Fair (242,166 bridges): The largest group; these are functional but show clear wear, signaling a massive upcoming maintenance demand.
+ * 40.8% Good (193,638 bridges): Structures in stable condition requiring only routine monitoring.
+ * 8.2% Poor (39,076 bridges): Bridges that have reached the threshold for structural deficiency and require active repair or replacement.
+ * 
 
 ---
 
