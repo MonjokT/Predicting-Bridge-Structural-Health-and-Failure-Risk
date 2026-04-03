@@ -363,7 +363,7 @@ The right chart provides a high-level safety summary of the 474,880 highway brid
  * 51.0% Fair (242,166 bridges): The largest group; these are functional but show clear wear, signaling a massive upcoming maintenance demand.
  * 40.8% Good (193,638 bridges): Structures in stable condition requiring only routine monitoring.
  * 8.2% Poor (39,076 bridges): Bridges that have reached the threshold for structural deficiency and require active repair or replacement.
- * 
+
 
 ---
 
@@ -372,19 +372,15 @@ The right chart provides a high-level safety summary of the 474,880 highway brid
 <img width="1384" height="484" alt="1000820969" src="https://github.com/user-attachments/assets/96685a20-aa97-4a76-ae63-a432e9903855" />
 
 
-Yes — clearly. The scatter plot on the left shows 10,000 randomly sampled bridges.
-Each dot is one bridge; the x-axis is how old it is, the y-axis is its condition
-score. Older bridges (right side) have more dots at lower scores. Newer bridges
-(left side) are clustered near scores 7 and 8.
+Yes — clearly. 2. 
+The scatter plot on the left illustrates the raw relationship between a bridge's age and its structural health. While newer bridges are densely clustered at high scores (7–9), the "downward drift" of the data points as age increases shows that time is the most persistent threat to structural integrity.
+The line chart (right) provides a clearer trend by averaging these scores across decades:
+ * Direct Correlation: Condition ratings follow a near-constant decline as we move from modern bridges (averaging ~8.0) back toward the early 1900s.
+ * The "Fair" Plateau: Bridges built between 1800 and 1900 have plateaued in the "Fair" category (averaging ~5.0), likely because those still standing have undergone significant historic preservation.
+ * Predictive Power: Age is the single most reliable predictor in the model, as it serves as a proxy for cumulative environmental wear and outdated design standards.
+   
+In summary, younger bridges consistently hold higher safety ratings, while structures older than 70 years are statistically gravitating toward the Poor (4.0) threshold, marking them as the primary targets for long-term replacement planning.
 
-The line chart on the right is cleaner: it groups bridges by the decade they were
-built and shows the average condition score per decade. Bridges built before 1900
-average around 5.0 (Fair). Bridges built in the 1990s and 2000s average close to
-7.5 (Good to Very Good). The red dashed line marks the Poor threshold at 4 — pre-
-1900 bridges are approaching it on average.
-
-This confirms that age is the single strongest physical predictor of condition —
-and it is the feature the model learns the most from.
 
 ---
 
