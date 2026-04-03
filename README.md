@@ -31,19 +31,19 @@
 Every day, millions of people drive over bridges without knowing whether the
 structure beneath them is in good condition or quietly getting worse. The United
 States inspects over 620,000 public bridges every year and records each inspection
-in a federal database. That data exists — but it has not been widely used to
+in a federal database. That data exists, but it has not been widely used to
 forecast which bridges are heading toward poor condition before the next inspector
 arrives.
 
 This project asks: can a machine learning model look at a bridge's age, physical
-size, traffic load, and maintenance history — and predict how bad its structural
+size, traffic load, and maintenance history ,and predict how bad its structural
 condition is likely to be?
 
 To answer that, I built a supervised machine learning pipeline using the 2023
 National Bridge Inventory. The pipeline covers the complete workflow: loading and
 cleaning 621,581 inspection records, exploring patterns in the data, engineering
 new features, training and comparing six regression models, and producing a ranked
-list of bridges predicted to be approaching structural failure — all without using
+list of bridges predicted to be approaching structural failure ,all without using
 any live inspection data as a model input.
 
 This is my first supervised machine learning project, built as part of a portfolio
@@ -60,7 +60,7 @@ responsible for the safety of the country's highway network. It runs the
 US to be physically inspected at least once every two years by a certified engineer.
 
 Each inspection produces a detailed record submitted to the federal government.
-These records form the National Bridge Inventory — one of the most comprehensive
+These records form the National Bridge Inventory ,one of the most comprehensive
 infrastructure datasets available anywhere in the world. It is updated annually
 and released to the public at no cost.
 
@@ -239,7 +239,7 @@ project can see exactly what the raw data contains.
 16 of the 123 columns were selected. The selection was guided by a civil engineering
 perspective: what would a maintenance planner know about a bridge before dispatching
 an inspection team? The answer is things like its age, physical dimensions, the
-load it was built to carry, and how much traffic it handles — not the inspection
+load it was built to carry, and how much traffic it handles ,not the inspection
 scores themselves.
 
 | Column | What it is |
@@ -266,7 +266,7 @@ scores themselves.
 >
 > `LOWEST_RATING` is literally the lowest of those three scores. If those columns
 > were fed into the model as inputs, it would be like handing a student the answer
-> sheet before the exam — the model would score perfectly but would not have learned
+> sheet before the exam ,the model would score perfectly but would not have learned
 > anything real. In machine learning, this is called **data leakage**: when
 > information that directly reveals the answer is accidentally included as a feature.
 > Those three columns were kept for the exploratory analysis stage only and were
@@ -298,7 +298,7 @@ system.
 Scores of **4 and below are classified as structurally deficient** by the FHWA.
 This is a formal designation meaning the bridge has at least one component in poor
 enough condition to require close attention. Being structurally deficient does not
-automatically mean a bridge is unsafe to cross — but it does mean it needs
+automatically mean a bridge is unsafe to cross ,but it does mean it needs
 maintenance intervention.
 
 ---
