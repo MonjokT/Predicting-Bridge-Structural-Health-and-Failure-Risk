@@ -352,7 +352,7 @@ the models more useful signals:
 
 ---
 
-## Results and Findings
+## Results and Findings for the EDA
 
 ### 1. How Bridge Conditions Are Distributed
 
@@ -516,6 +516,82 @@ of penalty. These models would show more differentiation on a smaller dataset.
 
 
  The at-risk report applies the Multiple Linear Regression model to all 474,880 highway bridges and flags 4,329 structures (0.9% of the inventory) predicted to score 4 or below. According to the model, Iowa, Missouri, and Mississippi show the highest volume of at-risk bridges, followed closely by Illinois and Pennsylvania. This distribution reflects the challenges faced by Midwestern and Northeastern states, where a combination of the nation's oldest bridge stock and harsh freeze-thaw cycles significantly accelerates structural deterioration.
+
+
+---
+
+## Summary
+The starting point of this project started with a question that made sense to me as a civil engineer.
+The United States inspects over 620,000 public bridges every year and records
+every inspection in a federal database that is freely available to the public.
+That data captures the condition of every bridge in the country along with how old it is, how much
+traffic it carries, and what load it was built to handle. The question I wanted
+to answer was whether a machine learning model could look at a bridge's physical
+and operational characteristics and predict how bad its structural condition is
+likely to be, before an inspector ever arrives on site.
+
+To answer that, I built a regression pipeline on the 2023 National Bridge
+Inventory, 621,581 inspection records covering all 50 states. The data required significant cleaning before any modelling
+could begin. Condition columns that should have held numeric ratings were stored
+as text because the federal dataset uses the letter N to indicate that a component
+does not exist on a particular structure — a culvert, for example, has no deck
+or superstructure, so those fields are recorded as not applicable. Traffic counts
+contained a placeholder value of 999,999 for bridges where the count was unknown.
+Reconstruction years contained zeros and values in the hundreds that were clearly
+entry errors. Each of these had to be handled deliberately, and the decisions were
+guided by the FHWA's own recording and coding documentation rather than assumption.
+
+The dataset also contains two fundamentally different types of structures,
+highway bridges and drainage culverts, which cannot be modelled together because
+their structural components are entirely different. Separating them correctly
+before analysis was one of the more important data decisions in the project.
+
+Four additional features were engineered from the raw columns to give the models
+more meaningful signals. Bridge age was calculated from the year of construction.
+Years since last reconstruction was calculated from the renovation history, with
+bridges that had never been rebuilt assigned their full age as a proxy. A load
+ratio was created by dividing the routine traffic load limit by the maximum
+structural capacity, capturing how close to its limits a bridge is being used.
+And a traffic-age interaction term was created by multiplying daily traffic volume
+by bridge age, which captures the compounded deterioration that comes from heavy
+use on an old structure,something neither variable communicates on its own.
+
+Six regression models were trained and compared, progressing from a single-feature
+baseline using only bridge age all the way through to regularised models combining
+multiple penalty approaches. The best-performing model was Polynomial Regression,
+which achieved an R-squared of 0.42 and a mean absolute error of 0.72 condition
+score points on a test set of nearly 95,000 bridges. It outperformed the linear
+models because bridge deterioration does not follow a straight line. Structures
+tend to hold up reasonably well for many years and then decline faster as they get
+older — the wear accelerates. Linear models assume a fixed rate of decline per
+year regardless of how old a bridge is, which does not match how physical
+structures actually behave. Polynomial Regression creates squared versions of
+the features and allows the model to fit that accelerating curve, which is why
+it captured the data pattern more accurately than any straight-line approach.
+
+An R-squared of 0.42 means the model accounts for 42 percent of the variation
+in condition scores using only physical and operational data, with no inspection
+results used as inputs. The remaining 58 percent is explained by things the model
+was never given; the quality of the original construction materials, local weather
+and salt exposure, the specific maintenance decisions made at the state level over
+decades. A much higher score on this feature set would have been a warning sign
+rather than an achievement, as it would most likely have indicated that inspection
+data had accidentally been included in the model inputs.
+
+The final output was a formatted Excel report containing all 4,325 bridges
+predicted to be at or below the federal structural deficiency threshold, organised
+by state and assigned to one of four risk tiers based on how severe the predicted
+score is. The report was designed to be handed directly to a transport department
+team — sorted so the worst bridges in each state appear first, with a state-level
+summary sheet for a high-level view and a plain-language legend so anyone
+receiving the file can interpret it without needing a technical background.
+
+The goal of the project was never to replace physical inspection. It was to give
+maintenance planners a data-driven basis for deciding where to send inspectors
+first,shifting from a reactive model where bridges deteriorate before anyone
+acts, to a more anticipatory one where the data points toward the structures most
+likely to need urgent attention in the next inspection cycle.
+
 
 ---
 
