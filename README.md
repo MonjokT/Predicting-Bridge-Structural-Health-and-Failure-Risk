@@ -593,6 +593,8 @@ acts, to a more anticipatory one where the data points toward the structures mos
 likely to need urgent attention in the next inspection cycle.
 
 
+Ps: I want to be clear that this is entirely a personal learning project. It is not affiliated with the FHWA, any state Department of Transportation, or any government body. The dataset is publicly available and the coding guide used to interpret it is a published federal document. The goal was simply to apply what I am learning in machine learning to a domain I already understand ,and to build something that demonstrates not just technical execution, but the ability to think through a real problem from start to finish.
+
 ---
 
 ## How to Run This Project
