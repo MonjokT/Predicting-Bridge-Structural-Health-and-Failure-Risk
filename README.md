@@ -35,9 +35,9 @@ in a federal database. That data exists, but it has not been widely used to
 forecast which bridges are heading toward poor condition before the next inspector
 arrives.
 
-This project asks: can a machine learning model look at a bridge's age, physical
+This project asks if  a machine learning model can look at a bridge's age, physical
 size, traffic load, and maintenance history ,and predict how bad its structural
-condition is likely to be?
+condition is likely to be.
 
 To answer that, I built a supervised machine learning pipeline using the 2023
 National Bridge Inventory. The pipeline covers the complete workflow: loading and
@@ -358,8 +358,8 @@ the models more useful signals:
 
 <img width="1384" height="484" alt="1000820968" src="https://github.com/user-attachments/assets/bdeee23c-cc27-42bf-ad6c-bef1f4e70a80" />
 
-The left chart reveals the immediate workload for maintenance planners: while most bridges fall into the "Fair" to "Satisfactory" range (scores 5–7), the significant volume of structures at score 4 and below represents the critical "At-Risk" group. These specific 39,076 bridges require urgent budgetary priority and engineering intervention before structural deterioration becomes irreversible.
-The right chart provides a high-level safety summary of the 474,880 highway bridges analyzed:
+The chart on the left reveals the immediate workload for maintenance planners. While most bridges fall into the "Fair" to "Satisfactory" range ,that is scores 5–7,the significant volume of structures at score 4 and below represents the critical "At-Risk" group. These specific number of bridges(i.e 39,076 bridges) require an ugent budgetary priority and engineering intervention before structural deterioration becomes irreversible.
+The chart on the right provides a high-level safety summary of the 474,880 highway bridges analyzed:
  * 51.0% Fair (242,166 bridges): The largest group; these are functional but show clear wear, signaling a massive upcoming maintenance demand.
  * 40.8% Good (193,638 bridges): Structures in stable condition requiring only routine monitoring.
  * 8.2% Poor (39,076 bridges): Bridges that have reached the threshold for structural deficiency and require active repair or replacement.
@@ -372,9 +372,9 @@ The right chart provides a high-level safety summary of the 474,880 highway brid
 <img width="1384" height="484" alt="1000820969" src="https://github.com/user-attachments/assets/96685a20-aa97-4a76-ae63-a432e9903855" />
 
 
-Yes — clearly. 2. 
+Yes ,clearly. 
 The scatter plot on the left illustrates the raw relationship between a bridge's age and its structural health. While newer bridges are densely clustered at high scores (7–9), the "downward drift" of the data points as age increases shows that time is the most persistent threat to structural integrity.
-The line chart (right) provides a clearer trend by averaging these scores across decades:
+The line chart on the right provides a clearer trend by averaging these scores across decades:
  * Direct Correlation: Condition ratings follow a near-constant decline as we move from modern bridges (averaging ~8.0) back toward the early 1900s.
  * The "Fair" Plateau: Bridges built between 1800 and 1900 have plateaued in the "Fair" category (averaging ~5.0), likely because those still standing have undergone significant historic preservation.
  * Predictive Power: Age is the single most reliable predictor in the model, as it serves as a proxy for cumulative environmental wear and outdated design standards.
