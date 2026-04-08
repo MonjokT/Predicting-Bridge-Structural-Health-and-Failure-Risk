@@ -438,7 +438,7 @@ specifically to handle this.
 
 ### 5. Does Reconstruction Help?
 
-<img width="784" height="484" alt="1000820972" src="https://github.com/user-attachments/assets/808cd9df-61da-4d18-9b1f-8a4ecafcecaa" />
+<img width="1578" height="512" alt="1000820974" src="https://github.com/user-attachments/assets/24c7f3a7-e7ec-4e08-819c-78b3cf8e1f74" />
 
 
 Yes, measurably. The three charts examine the `YEARS_SINCE_RENO` feature from
@@ -466,7 +466,7 @@ rating for many bridges.
 
 ### 6. How Did the Models Compare?
 
-<img width="1578" height="512" alt="1000820974" src="https://github.com/user-attachments/assets/24c7f3a7-e7ec-4e08-819c-78b3cf8e1f74" />
+<img width="784" height="484" alt="1000820972" src="https://github.com/user-attachments/assets/808cd9df-61da-4d18-9b1f-8a4ecafcecaa" />
 
 
 | Model | R² | MAE | RMSE |
