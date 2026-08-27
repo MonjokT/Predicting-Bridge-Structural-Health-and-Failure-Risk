@@ -438,28 +438,7 @@ specifically to handle this.
 
 ### 5. Does Reconstruction Help?
 
-<img width="784" height="484" alt="1000820972" src="https://github.com/user-attachments/assets/808cd9df-61da-4d18-9b1f-8a4ecafcecaa" />
-Yes, measurably. The three charts examine the `YEARS_SINCE_RENO` feature from
-different angles.
-
-The left chart shows the distribution of years since last reconstruction across all
-bridges. Most bridges have not been rebuilt recently — the distribution has a long
-tail. The red dashed line shows the average of about 39 years.
-
-The middle chart shows how average condition score changes as time since
-reconstruction increases. Bridges reconstructed within the last 10 years average
-close to 7.5. Bridges that have not been touched in over 75 years average closer
-to 5.5. The colour coding (green/orange/red) shows this cross the Good, Fair, and
-Poor thresholds.
-
-The right chart is the most informative. For bridges of the same age, it compares
-those that have been reconstructed (green) against those that have never been
-rebuilt (red). In every age group from 20 years old to over 100, reconstructed
-bridges score higher. The gap is largest in the 41–80 year age bands — where
-rebuilding a bridge appears to add roughly half a point to its average condition
-score. On a 0–9 scale, half a point is the difference between a Fair and a Poor
-rating for many bridges.
-
+Yes, measurably- which helps measure the rate of deterioration or at least mitigate it.
 ---
 
 ### 6. How Did the Models Compare?
